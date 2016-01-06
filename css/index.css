@@ -1,0 +1,80 @@
+body, h1, h2, h3, h4, h5, p, dl, dd, ul, ol, form, input, textarea, th, td, select { margin: 0; padding: 0; }
+a{ text-decoration: none; }
+li { list-style: none; }
+em { font-style: normal; }
+img { border: none; vertical-align: top; }
+input{border: none;}
+input,button:focus{ outline: none; }
+button{ border:none; }
+body{ font-family: "Microsoft YaHei" Light; }
+/*公共部分*/
+.w-1188{width: 1188px;margin: 0 auto;}
+.fl-l{float: left;}
+/*标题*/
+.ix_new_title{height: 85px;}
+.ix_new_title img{margin: 30px 0;}
+
+.swiper-container{height: 732px}
+.pagination{position: absolute; left: 0; text-align: center; bottom:30px; width: 100%;z-index: 21;}
+.pagination .swiper-pagination-switch {display: inline-block; width: 10px; height: 10px; border-radius: 10px; background: #fff;margin: 0 5px; cursor: pointer; }
+.pagination .swiper-active-switch {background: #ffc2ae;}
+.ix_banner{position: relative;width: 1438px; margin: 0 auto;height: 732px;margin-top: 82px;}
+.ix_topbar_zone{position: fixed; top: 0; left: 0; right: 0; z-index: 22; background-color: #fff;}
+.ix_topbar_zone .ix_topbar{width: 1188px;height: 82px; margin: 0 auto;position: relative;}
+.ix_topbar_zone .ix_topbar .logo{width: 201px;position: absolute;top: 20px;left: 0;}
+.ix_topbar_zone .ix_topbar .logo img{width: 100%;}
+.ix_topbar_zone .ix_topbar .nav{width: 820px;line-height:43px;position: absolute;right: 0;}
+.ix_topbar_zone .ix_topbar .nav ul{float: right;}
+.ix_topbar_zone .ix_topbar .nav li{float: left; margin: 15px 0 15px 60px; text-align: center;}
+.ix_topbar_zone .ix_topbar .nav li a{display:block;color:#3b4247;}
+.ix_topbar_zone .ix_topbar .nav li.nav_current{border-bottom: 6px solid #ffc2ae;}
+.ix_topbar_zone .ix_topbar .nav li.nav_current a{color: #ffc2ae;}
+/*新闻*/
+.ix_new{height: 718px;}
+.ix_new .ix_new_main img{width: 100%;}
+.ix_new .ix_new_main{position: relative;height: 634px; background-color: #000;}
+.ix_new .ix_new_main img{cursor: pointer;}
+.ix_new .ix_new_main .ix_new_box01{width: 498px;}
+.ix_new .ix_new_main .ix_new_box02{width: 345px;}
+.ix_new .ix_new_main .ix_new_box03{width: 345px;}
+/*最新作品*/
+.ix_works_sub{position: relative;}
+.ix_works_sub .arrow-left{ position: absolute; left: 0; top: 35%; margin-top: -15px; width: 17px; height: 30px;}
+.ix_works_sub .arrow-right{ position: absolute; right: 0; top: 35%; margin-top: -15px; width: 17px; height: 30px;}
+.ix_works .ix_works_banner{height: 568px;overflow: hidden;}
+.ix_works .ix_works_banner img{width: 100%;cursor: pointer;}
+.ix_works .ix_works_sub .ix_works_subpic{width: 1122px;height: 129px; margin: 10px auto;overflow: hidden;position: relative;}
+.ix_works .ix_works_sub .ix_works_subpic .ix_works_subpic_wrap{position: absolute;}
+.ix_works .ix_works_sub .ix_works_subpic .ix_works_subone{float: left;width: 217px;margin-left: 9px;background-color: #000;}
+.ix_works .ix_works_sub .ix_works_subpic .curpic.ix_works_subone{background: url(../images/mask_mj.png) #000 no-repeat 50%; background-size: 35%;}
+.ix_works .ix_works_sub .ix_works_subpic .ix_works_subone img{width: 100%;cursor: pointer;}
+.ix_works .ix_works_sub .ix_works_subpic .curpic.ix_works_subone img{opacity: 0.4;background: url(../images/mask_mj.png);}
+.ix_works .ix_works_sub .ix_works_subpic .ix_works_subone.marin_left0{margin-left: 0;}
+/*客片展示*/
+.swiper-container-case{height: 650px;margin: 50px 0;overflow: hidden;}
+.pagination-case{position: absolute; left: 0; text-align: center; bottom:0; width: 100%;z-index: 21;}
+.pagination-case .swiper-pagination-switch {display: inline-block; width: 10px; height: 10px; border-radius: 10px; background: #3b4247;margin: 0 5px; cursor: pointer; }
+.pagination-case .swiper-active-switch {background: #ffc2ae;}
+.margin_top110{margin-top: 110px;}
+.ix_show_case{position: relative;height: 732px;}
+.ix_show_case .ix_show_case_pic_zone .bannerzone{}
+.ix_show_case .ix_show_case_pic_zone .bannerzone .ix_show_case_pic{width: 270px;height: 270px;float: left;border-radius: 50%; border: 9px solid #f1f1f1; margin-left: 10px;overflow: hidden;}
+.ix_show_case .ix_show_case_pic_zone .bannerzone .ix_show_case_pic:hover{background: url(../images/mask_mj.png) #000 no-repeat 50%;}
+.ix_show_case .ix_show_case_pic_zone .bannerzone .ix_show_case_pic img{width: 100%;}
+.ix_show_case .ix_show_case_pic_zone .bannerzone .ix_show_case_pic img:hover{opacity: 0.4;background: url(../images/mask_mj.png);}
+.ix_show_case .ix_show_case_pic_zone .bannerzone .ix_show_case_pic.marin_left0{margin-left: 0;}
+/*联系我们*/
+.ix_contact_us{margin-bottom: 70px;}
+.ix_contact_us .ix_map{width: 1439px;margin: 0 auto;}
+.ix_contact_us .ix_botinfo{height: 376px;background: url(../images/bot_address.jpg);margin: 50px auto;position: relative;}
+.ix_contact_us .ix_botinfo .ix_bot_contact{position: absolute;width: 175px;height: 50px;top: 56%; left: 4%;}
+.ix_contact_us .ix_botinfo .ix_bot_contact a{display: block;width: 33%; height: 100%; float: left;}
+/*底部bar*/
+.ix_bot_bar{height: 50px; width: 100%; background-color: #3b4247; position: fixed; bottom: 0; z-index: 22;}
+.ix_bot_bar .ix_bot_bar_inside{height: 100%;}
+.ix_bot_bar .ix_bot_bar_inside .ix_tel{float: left;}
+.ix_bot_bar .ix_bot_bar_inside .ix_contactmothed{float: right; margin: 8px 0;}
+
+/*dress.html*/
+.dress_pic_zone{position: relative; width: 1439px; margin: 0 auto;  margin-top: 82px;}
+/*.dress_pic_zone .up_pic_zone{height: 732px;}*/

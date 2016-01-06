@@ -1,0 +1,90 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>后台管理页面</title>
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+<style type="text/css">
+.display_none{display: none;}
+#j_banner_show li{width: 150px;list-style-type: none;}
+#j_banner_show li img{width: 100%;}
+</style>
+</head>
+<body>
+	<div class="page-header">
+		<h2>图片上传管理</h2>
+	</div>
+	<ul class="nav nav-pills">
+		<li role="presentation" class="active"><a href="javascript:void(0);">首页banner</a></li>
+		<li role="presentation"><a href="javascript:void(0);">NEW&EVENTS 新闻活动</a></li>
+		<li role="presentation"><a href="javascript:void(0);">WORKS 最新作品</a></li>
+		<li role="presentation"><a href="javascript:void(0);">SHOW CASE 客片展示</a></li>
+		<li role="presentation"><a href="javascript:void(0);">礼服展示</a></li>
+	</ul>
+	<div class="upload_zone panel panel-default">
+		<div class="upload_box">
+			<form id="j_banner_form" method="post" enctype="multipart/form-data" action="./upload.php?action=upload"> 
+				<div class="form-group">
+					<h4>首页banner</h4>
+					<input type="file" id="banner_input" name='img'>
+					<input type="hidden" name="p_type" value="1">
+				</div>
+				<button type="button" class="btn btn-default" id="j_banner_btn">上传</button>
+			</form>
+			<ul id="j_banner_show">
+			</ul>
+		</div>
+		<div class="upload_box display_none">
+			<form id="" method="post" enctype="multipart/form-data" action="./upload.php?action=upload"> 
+				<div class="form-group">
+					<h4>NEW&EVENTS 新闻活动</h4>
+					<input type="file" id="" name='main'>
+					<input type="hidden" name="p_type" value=2>
+				</div>
+			</form>
+			<button type="submit" class="btn btn-default">上传</button>
+		</div>
+		<div class="upload_box display_none">
+			<form id="" method="post" enctype="multipart/form-data" action="./upload.php?action=upload"> 
+				<div class="form-group">
+					<h4>WORKS 最新作品</h4>
+					<input type="file" id=""  name='main'>
+					<input type="hidden" name="p_type" value=3>
+				</div>
+			</form>
+			<button type="submit" class="btn btn-default">上传</button>
+		</div>
+		<div class="upload_box display_none">
+			<form id="" method="post" enctype="multipart/form-data" action="./upload.php?action=upload"> 
+				<h4>SHOW CASE 客片展示</h4>
+				<div class="form-group">
+					<label for="">首页入口图</label>
+					<input type="file" id=""  name='main'>
+					<input type="hidden" name="p_type" value=4>
+				</div>
+			</form>
+			<form id="" method="post" enctype="multipart/form-data" action="./upload.php?action=upload">
+				<div class="form-group">
+					<label for="">子页面展示图</label>
+					<input type="file" id="" name='sub'>
+					<input type="hidden" name="p_type" value=4>
+				</div>
+			</form>
+			<button type="submit" class="btn btn-default">上传</button>
+		</div>
+		<div class="upload_box display_none">
+			<form id="" method="post" enctype="multipart/form-data" action="./upload.php?action=upload"> 
+				<div class="form-group">
+					<h4>礼服展示</h4>
+					<input type="file" id=""  name='main'>
+					<input type="hidden" name="p_type" value=5>
+				</div>
+			</form>
+			<button type="submit" class="btn btn-default">上传</button>
+		</div>
+	</div>
+<script src="../js/jquery-1.10.1.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../js/manage.js"></script>
+</body>
+</html>
